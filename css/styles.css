@@ -54,10 +54,12 @@ img {
   color: #404bbf;
 }
 
-.container {
-  max-width: 1158px;
+.container-header {
+  display: flex;
+  width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px 0 15px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .page-logo {
@@ -68,13 +70,21 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-color {
   color: #2e2f42;
 }
 
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
 .page-address {
+  display: flex;
+  gap: 40px;
   font-style: normal;
   padding-left: 332px;
   padding-right: 156px;
@@ -83,6 +93,9 @@ img {
 
 .menu {
   color: #2e2f42;
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
 }
 
 .menu-link {
@@ -108,6 +121,7 @@ img {
   color: #fff;
   width: 496px;
   margin-bottom: 48px;
+  max-width: 496px;
 }
 
 .hero {
@@ -123,9 +137,13 @@ img {
   height: 600px;
   align-items: center;
   margin-bottom: 120px;
+  padding: 188px 0;
 }
 
 .buy-now-btn {
+  display: block;
+  min-width: 169px;
+  border: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -145,6 +163,10 @@ img {
 }
 
 /*Section 2*/
+.advantages {
+  padding: 120px 0;
+}
+
 .advantages-list-title {
   font-weight: 500;
   font-size: 20px;
@@ -163,8 +185,13 @@ img {
 
 .advantages-list {
   display: flex;
+  gap: 24px;
   align-items: center;
   margin-left: 24px;
+}
+
+.advantages-list-item {
+  width: calc((100% - 72px) / 4);
 }
 
 /*Section 3*/
@@ -176,6 +203,7 @@ img {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 72px;
+  padding: 120px 0;
 }
 
 .team {
@@ -185,6 +213,7 @@ img {
 
 .team-list {
   display: flex;
+  gap: 24px;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
@@ -200,11 +229,18 @@ img {
   background: #fff;
 }
 
+.box-team {
+  padding: 32px 0;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
 .team-list-item {
   background-color: #ffffff;
   padding: 0px 0px 32px 0px;
   width: 264px;
   height: 380px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-title {
@@ -230,6 +266,11 @@ img {
   margin: 156px;
 }
 
+.container-section-04 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .portfolio-section {
   font-weight: 700;
   font-size: 36px;
@@ -245,6 +286,15 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.box-portfolio {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 .portfolio-item {
@@ -296,6 +346,7 @@ img {
 .page-footer {
   background-color: #2e2f42;
   padding: 100px 1020px 156px 100px;
+  padding: 100px 0;
 }
 
 .logo-color-studio {
@@ -303,6 +354,8 @@ img {
 }
 
 .page-logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
