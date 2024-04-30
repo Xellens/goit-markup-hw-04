@@ -2,6 +2,9 @@
 ul,
 ol {
   list-style-type: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
 }
 
 a {
@@ -9,6 +12,14 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-left: 0;
+  margin-right: 0;
+}
 button {
   cursor: pointer;
 }
@@ -17,6 +28,12 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background: #fff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 /* Header Styles */
@@ -37,6 +54,12 @@ body {
   color: #404bbf;
 }
 
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .page-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -53,6 +76,9 @@ body {
 
 .page-address {
   font-style: normal;
+  padding-left: 332px;
+  padding-right: 156px;
+  margin-bottom: 24px;
 }
 
 .menu {
@@ -71,6 +97,8 @@ body {
   color: #404bbf;
 }
 
+/* Main styles */
+
 .main-title {
   font-weight: 700;
   font-size: 56px;
@@ -78,9 +106,12 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  width: 496px;
+  margin-bottom: 48px;
 }
 
 .hero {
+  display: flex;
   background-color: #2e2f42;
   font-weight: 700;
   font-size: 56px;
@@ -88,6 +119,10 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  align-content: center;
+  height: 600px;
+  align-items: center;
+  margin-bottom: 120px;
 }
 
 .buy-now-btn {
@@ -97,6 +132,10 @@ body {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
 }
 
 .buy-now-btn:hover,
@@ -105,12 +144,14 @@ body {
   background-color: #404bbf;
 }
 
+/*Section 2*/
 .advantages-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .advantages-list-text {
   font-weight: 400;
@@ -120,6 +161,13 @@ body {
   color: #434455;
 }
 
+.advantages-list {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+/*Section 3*/
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -127,14 +175,25 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .team {
   background-color: #f4f4fd;
+  margin-bottom: 120px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .section-title {
   text-transform: capitalize;
+  margin-top: 120px;
+  margin-bottom: 72px;
 }
 
 .team-list-img {
@@ -143,6 +202,9 @@ body {
 
 .team-list-item {
   background-color: #ffffff;
+  padding: 0px 0px 32px 0px;
+  width: 264px;
+  height: 380px;
 }
 
 .team-list-title {
@@ -163,6 +225,11 @@ body {
   color: #434455;
 }
 
+/* Section 4 */
+.portfolio {
+  margin: 156px;
+}
+
 .portfolio-section {
   font-weight: 700;
   font-size: 36px;
@@ -171,6 +238,22 @@ body {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-item {
+  margin-bottom: 48px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
 }
 
 .portfolio-list-title {
@@ -179,6 +262,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 
 .portfolio-list-text {
@@ -187,10 +271,18 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-top: 8px;
 }
 
 .portfolio-img {
   background: #fff;
+  width: 360px;
+  height: 300px;
+}
+
+/* Footer styles */
+.footer-text {
+  width: 264px;
 }
 
 .footer-text {
@@ -203,6 +295,7 @@ body {
 
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px 1020px 156px 100px;
 }
 
 .logo-color-studio {
